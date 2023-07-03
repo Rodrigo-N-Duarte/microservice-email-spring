@@ -5,6 +5,9 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Data
@@ -19,5 +22,7 @@ public class EmailDTO implements Serializable {
     private String owner;
     @NotBlank
     private String addressee;
+    private LocalDate date;
+    private LocalTime time;
     private StatusEmail status;
 }

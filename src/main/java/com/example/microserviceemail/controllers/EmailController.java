@@ -20,7 +20,7 @@ public class EmailController {
         return emailService.sendEmail(emailDTO);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<EmailDTO>> findAll() {
         return emailService.findAll();
     }

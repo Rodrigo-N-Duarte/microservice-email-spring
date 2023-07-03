@@ -5,6 +5,9 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -24,6 +27,10 @@ public class Email implements Serializable {
     private String owner;
     @Column
     private String addressee;
+    @Column
+    private LocalDate date;
+    @Column
+    private LocalTime time;
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR")
     private StatusEmail status;

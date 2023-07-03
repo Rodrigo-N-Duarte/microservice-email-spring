@@ -2,7 +2,6 @@ package com.example.microserviceemail.services;
 
 import com.example.microserviceemail.entity.dtos.EmailDTO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
