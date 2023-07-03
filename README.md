@@ -25,14 +25,14 @@ Execute o projeto.
 | `addressee` | `string` | **Obrigatório**. Email do destinatario |
 
 O corpo da requisição deve seguir o seguinte padrão:
-
+```json
 {
     "subject": "Titulo do email",
     "content": "Corpo do email",
     "owner": "emaildoemissor@gmail.com",
     "addressee": "destinatario@gmail.com"
 }
-
+```
 
 #### Retorna todos os emails
 
