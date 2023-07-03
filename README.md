@@ -7,6 +7,10 @@ Siga as instruções do link:
 https://support.google.com/accounts/answer/185833
 
 Crie uma nova senha e no arquivo application.properties cole essa nova senha e o email vinculado a ela.
+
+Importe para o application.properties o user e password do postgresql na sua máquina.
+Crie uma base de dados chamada 'ms-email'.
+
 Execute o projeto.
 
 
