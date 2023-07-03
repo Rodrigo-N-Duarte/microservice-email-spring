@@ -10,17 +10,13 @@ Crie uma nova senha e no arquivo application.properties cole essa nova senha e o
 Execute o projeto.
 
 
-
-
-
 ## Documentação da API
 
-#### Retorna todos os itens
+#### Envia o email
 
 ```http
   POST /email/send
 ```
-
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `subject` | `string` | **Obrigatório**. Titulo do email |
@@ -38,3 +34,13 @@ O corpo da requisição deve seguir o seguinte padrão:
 }
 
 
+#### Retorna todos os emails
+
+```http
+  GET /email
+```
+#### Retorna email por id
+
+```http
+  GET /email/:id
+```
